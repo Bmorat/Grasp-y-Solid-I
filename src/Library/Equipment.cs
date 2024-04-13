@@ -4,18 +4,18 @@
 // </copyright>
 //-------------------------------------------------------------------------------
 
-namespace Full_GRASP_And_SOLID.Library
-{
-    public class Equipment
+    namespace Full_GRASP_And_SOLID.Library
     {
-        public Equipment(string description, double hourlyCost)
+        public class Equipment
         {
-            this.Description = description;
-            this.HourlyCost = hourlyCost;
+            public Equipment(string description, double hourlyCost)
+            {
+                this.Description = description;
+                this.HourlyCost = hourlyCost;
+            }
+
+            public string Description { get; set; }
+
+            public double HourlyCost { get; set; }
         }
-
-        public string Description { get; set; }
-
-        public double HourlyCost { get; set; }
     }
-}
